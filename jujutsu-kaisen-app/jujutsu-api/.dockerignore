@@ -1,5 +1,5 @@
 target/
 .env
 *.iml
-.idea/
 *.class
+*.jar
