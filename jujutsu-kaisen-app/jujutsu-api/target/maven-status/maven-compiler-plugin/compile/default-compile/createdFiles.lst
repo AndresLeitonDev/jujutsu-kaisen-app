@@ -1,0 +1,6 @@
+com\jujutsu\config\SwaggerConfig.class
+com\jujutsu\controller\PersonajeController.class
+com\jujutsu\service\PersonajeService.class
+com\jujutsu\App.class
+com\jujutsu\model\Personaje.class
+com\jujutsu\repository\PersonajeRepository.class

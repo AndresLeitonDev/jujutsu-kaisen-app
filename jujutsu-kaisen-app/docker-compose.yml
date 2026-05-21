@@ -1,0 +1,20 @@
+services:
+
+  # Backend Spring Boot
+  jujutsu-backend:
+    build:
+      context: ./jujutsu-api
+      dockerfile: Dockerfile
+    container_name: jujutsu-backend
+    ports:
+      - "8081:8081"
+    environment:
+      - DB_PASSWORD=${DB_PASSWORD}
+    dns:
+      - 8.8.8.8
+      - 8.8.4.4
+    restart: unless-stopped
+
+networks:
+  default:
+    driver: bridge
